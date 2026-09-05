@@ -8,12 +8,12 @@
 --gold:#b68b45;
 --gold-light:#d8b06a;
 
---dark:#111111;
---dark2:#181818;
---dark3:#242424;
+--dark:#f6f3ee;
+--dark2:#ffffff;
+--dark3:#ece6dc;
 
 --white:#ffffff;
---gray:#cfcfcf;
+--gray:#555555;
 
 --radius:18px;
 
@@ -35,7 +35,7 @@ font-family:'Montserrat',sans-serif;
 
 background:var(--dark);
 
-color:white;
+color:#222;
 
 line-height:1.7;
 
@@ -107,7 +107,7 @@ font-weight:800;
 
 p{
 
-color:#d6d6d6;
+color:#4d4d4d;
 
 }
 
@@ -125,7 +125,7 @@ width:100%;
 
 z-index:9999;
 
-background:rgba(15,15,15,.55);
+background:rgba(255,255,255,.92);
 
 backdrop-filter:blur(16px);
 
@@ -276,11 +276,15 @@ padding:20px;
 
 color:var(--gold);
 
-letter-spacing:5px;
+letter-spacing:6px;
 
-font-size:15px;
+font-size:22px;
 
-font-weight:700;
+font-weight:800;
+
+text-transform:uppercase;
+
+text-shadow: 0 2px 6px rgba(0,0,0,.35);
 
 }
 
@@ -292,13 +296,25 @@ margin:30px 0;
 
 line-height:1.1;
 
-font-weight:800;
+color:#fff;
+
+font-weight:900;
+
+-webkit-text-stroke: 1px #000000;
+
+text-shadow:0 2px 8px rgba(0,0,0,.25);
 
 }
 
 .hero-content p{
 
+color:#fff;
+
 font-size:22px;
+
+font-weight:500;
+
+text-shadow:0 2px 8px rgba(0,0,0,.8);
 
 margin-bottom:45px;
 
@@ -356,7 +372,7 @@ transition:.35s;
 
 background:white;
 
-color:#111;
+color:#f6f3ee;
 
 } 
 
@@ -366,7 +382,7 @@ color:#111;
 
 .facts{
 
-background:#181818;
+background:#ffffff;
 
 padding:70px 0;
 
@@ -420,7 +436,7 @@ color:var(--gold);
 
 .fact p{
 
-color:#cfcfcf;
+color:#555555;
 
 }
 
@@ -430,7 +446,7 @@ color:#cfcfcf;
 
 .leistungen{
 
-background:#111;
+background:#f6f3ee;
 
 }
 
@@ -448,7 +464,7 @@ margin-top:60px;
 
 .card{
 
-background:#1b1b1b;
+background:#ffffff;
 
 border-radius:22px;
 
@@ -496,7 +512,7 @@ padding:25px 25px 10px;
 
 font-size:26px;
 
-color:#fff;
+color:#222;
 
 }
 
@@ -566,7 +582,7 @@ width:100%;
 =========================================== */
 
 .about{
-    background:#111;
+    background:#f6f3ee;
 }
 
 .about-grid{
@@ -595,7 +611,7 @@ width:100%;
 
 .about-content p{
     margin-bottom:20px;
-    color:#cfcfcf;
+    color:#555555;
     font-size:18px;
 }
 
@@ -635,7 +651,7 @@ width:100%;
 
 .about{
     padding:120px 0;
-    background:#111;
+    background:#f6f3ee;
 }
 
 .about-grid{
@@ -665,7 +681,7 @@ width:100%;
 }
 
 .about-content p{
-    color:#cfcfcf;
+    color:#555555;
     line-height:1.8;
     margin-bottom:20px;
     font-size:18px;
@@ -679,7 +695,7 @@ width:100%;
 }
 
 .feature{
-    background:#1b1b1b;
+    background:#ffffff;
     padding:18px;
     border-radius:12px;
     border:1px solid rgba(255,255,255,.05);
@@ -711,7 +727,7 @@ width:100%;
 ========================== */
 .contact{
     padding:120px 0;
-    background:#111;
+    background:#f6f3ee;
 }
 
 .contact-grid{
@@ -728,7 +744,7 @@ width:100%;
 }
 
 .contact-info p{
-    color:#cfcfcf;
+    color:#555555;
     font-size:18px;
     line-height:1.8;
     margin-bottom:35px;
@@ -745,7 +761,7 @@ width:100%;
     width:55px;
     height:55px;
     background:var(--gold);
-    color:#111;
+    color:#f6f3ee;
     border-radius:50%;
     display:flex;
     justify-content:center;
@@ -755,7 +771,7 @@ width:100%;
 
 .contact-box h4{
     margin:0;
-    color:#fff;
+    color:#222;
     font-size:18px;
 }
 
@@ -765,7 +781,7 @@ width:100%;
 }
 
 .contact-form{
-    background:#181818;
+    background:#ffffff;
     padding:40px;
     border-radius:20px;
     box-shadow:0 15px 40px rgba(0,0,0,.4);
@@ -784,8 +800,8 @@ width:100%;
 .contact-form input,
 .contact-form textarea{
     width:100%;
-    background:#222;
-    color:#fff;
+    background:#fff;
+    color:#222;
     border:1px solid #333;
     border-radius:12px;
     padding:20px;
@@ -809,7 +825,7 @@ width:100%;
     width:100%;
     margin-top:25px;
     background:var(--gold);
-    color:#111;
+    color:#f6f3ee;
     padding:20px;
     border:none;
     border-radius:12px;
@@ -828,7 +844,7 @@ width:100%;
 ========================== */
 
 footer{
-    background:#0a0a0a;
+    background:#efefef;
     padding:60px 0;
     border-top:1px solid rgba(255,255,255,.08);
 }
@@ -891,7 +907,7 @@ footer a{
 
 .button-outline:hover{
     background:#d4af37;
-    color:#111;
+    color:#f6f3ee;
     transform:translateY(-4px);
 }
 
@@ -924,7 +940,7 @@ footer a{
 }
 
 ::-webkit-scrollbar-track{
-    background:#111;
+    background:#f6f3ee;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -942,7 +958,7 @@ footer a{
 
 ::selection{
     background:#d4af37;
-    color:#111;
+    color:#f6f3ee;
 }
 
 /* ==========================
@@ -1079,7 +1095,7 @@ box-shadow:
 
 padding:100px 0;
 
-background:#111;
+background:#f6f3ee;
 
 }
 
@@ -1140,14 +1156,14 @@ color:#d7d7d7;
 
 .legal-page{
     padding:120px 20px;
-    background:#111;
+    background:#f6f3ee;
     min-height:80vh;
 }
 
 .container-small{
     max-width:900px;
     margin:auto;
-    background:#1b1b1b;
+    background:#ffffff;
     padding:50px;
     border-radius:18px;
     border:1px solid rgba(255,255,255,.08);
@@ -1163,11 +1179,11 @@ color:#d7d7d7;
 .container-small h2{
     margin-top:35px;
     margin-bottom:12px;
-    color:#fff;
+    color:#222;
 }
 
 .container-small p{
-    color:#cfcfcf;
+    color:#555555;
     line-height:1.9;
 }
 
@@ -1200,13 +1216,13 @@ color:#d7d7d7;
 }
 
 .cookie-text h3{
-    color:#fff;
+    color:#222;
     margin-bottom:10px;
     font-size:24px;
 }
 
 .cookie-text p{
-    color:#cfcfcf;
+    color:#555555;
     line-height:1.7;
     max-width:700px;
 }
@@ -1233,7 +1249,7 @@ color:#d7d7d7;
 
 .cookie-btn.accept{
     background:#d8a13b;
-    color:#fff;
+    color:#222;
 }
 
 .cookie-btn.accept:hover{
@@ -1243,7 +1259,7 @@ color:#d7d7d7;
 .cookie-btn.decline{
     background:transparent;
     border:2px solid #555;
-    color:#fff;
+    color:#222;
 }
 
 .cookie-btn.decline:hover{
@@ -1288,7 +1304,7 @@ border-radius:50%;
 
 background:#25D366;
 
-color:white;
+color:#222;
 
 display:flex;
 
@@ -1359,7 +1375,7 @@ bottom:18px;
 
 margin-top:50px;
 
-background:#1b1b1b;
+background:#ffffff;
 
 padding:45px;
 
@@ -1377,7 +1393,7 @@ font-size:32px;
 
 margin-bottom:20px;
 
-color:#fff;
+color:#222;
 
 }
 
@@ -1387,7 +1403,7 @@ max-width:650px;
 
 margin:auto;
 
-color:#cfcfcf;
+color:#555555;
 
 line-height:1.8;
 
@@ -1400,7 +1416,7 @@ margin-bottom:35px;
 
 .map-section{
     padding:100px 0;
-    background:#111;
+    background:#f6f3ee;
 }
 
 .map-section span{
@@ -1410,7 +1426,7 @@ margin-bottom:35px;
 }
 
 .map-section h2{
-    color:white;
+    color:#222;
     font-size:48px;
     margin:15px 0 40px;
 }
