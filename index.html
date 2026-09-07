@@ -235,41 +235,65 @@ Aufarbeitung und Restaurierung hochwertiger Möbel und Holzobjekte.
 
 </section>
 
-<section class="projects" id="projekte">
+<section class="projects projects-showcase" id="projekte">
+  <div class="container">
+    <span class="section-small">PROJEKTE</span>
+    <h2>Vom ersten Zuschnitt bis zum letzten Schliff.</h2>
+    <p class="projects-intro">Nicht nur das Ergebnis zählt. Hier gibt es ausgewählte Arbeiten mit Einblicken in die Entstehung - echtes Holz, echte Werkstatt, echte Handarbeit.</p>
 
-<div class="container">
+    <div class="project-story-grid">
+      <article class="project-story project-story-featured">
+        <button class="project-open" type="button" data-project="runder-tisch" aria-label="Projekt Runder Epoxidharztisch öffnen">
+          <div class="project-cover"><img src="images/projekte/runder-tisch/1000255181.jpg" alt="Runder Tisch aus Eiche und Epoxidharz mit integrierter Beleuchtung" loading="lazy"><span class="project-number">01</span></div>
+          <div class="project-copy"><span class="project-kicker">Eiche · Epoxidharz · LED</span><h3>Runder Epoxidharztisch</h3><p>Massive Eiche, gold- und violettfarbene Harzbereiche und eine integrierte Lichtführung machen aus der Tischplatte ein echtes Einzelstück.</p><span class="project-cta">Entstehung ansehen <b>→</b></span></div>
+        </button>
+      </article>
 
-<span class="section-small">
+      <article class="project-story">
+        <button class="project-open" type="button" data-project="vw-bus" aria-label="Projekt VW-Bus Bett öffnen">
+          <div class="project-cover"><img src="images/projekte/vw-bus-bett/1000223304.jpg" alt="Klappbares Bett für einen VW-Bus" loading="lazy"><span class="project-number">02</span></div>
+          <div class="project-copy"><span class="project-kicker">Fahrzeugausbau · Multiplex · Klappmechanik</span><h3>Bett für einen VW-Bus</h3><p>Eine leichte, stabile und kompakt faltbare Schlaflösung mit Belüftungsöffnungen, eingelassenen Scharnieren und ausklappbaren Stützen.</p><span class="project-cta">Entstehung ansehen <b>→</b></span></div>
+        </button>
+      </article>
 
-PROJEKTE
+      <article class="project-story">
+        <button class="project-open" type="button" data-project="waschtisch" aria-label="Projekt Waschtisch öffnen">
+          <div class="project-cover"><img src="images/projekte/waschtisch/1000255184.png" alt="Fertiger Waschtisch aus Eiche und Epoxidharz im Badezimmer" loading="lazy"><span class="project-number">03</span></div>
+          <div class="project-copy"><span class="project-kicker">Eiche · Epoxidharz · Bad</span><h3>Waschtisch nach Maß</h3><p>Aus Eichenbohlen und goldfarbenem Epoxidharz entsteht eine passgenaue Ablage - plan gefräst, geschliffen und für die Armaturen vorbereitet.</p><span class="project-cta">Entstehung ansehen <b>→</b></span></div>
+        </button>
+      </article>
+    </div>
 
-</span>
-
-<h2>
-
-Ein Blick auf meine Arbeiten
-
-</h2>
-
-<div class="gallery">
-
-<img src="images/galerie/wasch.png" alt="Projekt">
-
-<img src="images/galerie/tisch.jpg" alt="Projekt">
-
-<img src="images/galerie/bank.jpg" alt="Projekt">
-
-<img src="images//galerie/zaun.jpg" alt="Projekt">
-
-<img src="images/galerie/bastel.jpg" alt="Projekt">
-
-<img src="images//galerie/tische.png" alt="Projekt">
-
-</div>
-
-</div>
-
+    <div class="more-work">
+      <div><span class="section-small">MEHR HANDWERK</span><h3>Weitere Arbeiten</h3></div>
+      <div class="mini-gallery" aria-label="Weitere Arbeiten – Bildergalerie">
+        <button class="mini-gallery-item" type="button" data-lightbox-src="images/galerie/bank.jpg" data-lightbox-alt="Holzbank"><img src="images/galerie/bank.jpg" alt="Holzbank" loading="lazy"><span>Groß ansehen</span></button>
+        <button class="mini-gallery-item" type="button" data-lightbox-src="images/galerie/treppe.png" data-lightbox-alt="Treppenarbeit"><img src="images/galerie/treppe.png" alt="Treppenarbeit" loading="lazy"><span>Groß ansehen</span></button>
+        <button class="mini-gallery-item" type="button" data-lightbox-src="images/galerie/zaun.jpg" data-lightbox-alt="Zaun aus Holz"><img src="images/galerie/zaun.jpg" alt="Zaun aus Holz" loading="lazy"><span>Groß ansehen</span></button>
+        <button class="mini-gallery-item" type="button" data-lightbox-src="images/galerie/altneu.jpg" data-lightbox-alt="Restaurierungsarbeit"><img src="images/galerie/altneu.jpg" alt="Restaurierungsarbeit" loading="lazy"><span>Groß ansehen</span></button>
+      </div>
+    </div>
+  </div>
 </section>
+
+<div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+  <div class="project-modal-backdrop" data-project-close></div>
+  <div class="project-modal-panel">
+    <button class="project-modal-close" type="button" data-project-close aria-label="Projekt schließen">×</button>
+    <div class="project-modal-head"><span class="project-modal-kicker" id="projectModalKicker"></span><h2 id="projectModalTitle"></h2><p id="projectModalText"></p></div>
+    <div class="project-progress"><span>ENTSTEHUNG</span><span>01</span><i></i><span id="projectStepCount"></span></div>
+    <div class="project-modal-gallery" id="projectModalGallery"></div>
+  </div>
+</div>
+
+<div class="image-lightbox" id="imageLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Bild groß anzeigen">
+  <div class="image-lightbox-backdrop" data-lightbox-close></div>
+  <div class="image-lightbox-content">
+    <button class="image-lightbox-close" type="button" data-lightbox-close aria-label="Bild schließen">×</button>
+    <img id="imageLightboxImg" src="" alt="">
+    <p id="imageLightboxCaption"></p>
+  </div>
+</div>
 
 <section class="about" id="ueber">
 
@@ -382,74 +406,75 @@ src="https://www.google.com/maps?q=Jungfernbrunnen+1A,+17094+Burg+Stargard&outpu
     </div>
 </section> 
 
-<section class="contact" id="kontakt">
+<section class="contact contact-v2" id="kontakt">
 
 <div class="container contact-grid">
 
-<div>
+<div class="contact-copy">
 
-<span class="section-small">
+<span class="section-small">KONTAKT</span>
 
-KONTAKT
+<h2>Was darf ich für Sie bauen?</h2>
 
-</span>
-
-<h2>
-
-SIE haben ein Projekt oder benötigen Hilfe?
-
-</h2>
-
-<p>
-
-Sie planen etwas aus Holz? Ich setze es um.
-
-Schreiben Sie mir einfach.
-
-</p>
+<p class="contact-lead">Wählen Sie einfach aus, worum es geht. So bekomme ich direkt die wichtigsten Infos und kann gezielter auf Ihre Anfrage eingehen.</p>
 
 <div class="contact-info">
+<p><strong>📞 Telefon</strong><br>+49 152 22450294</p>
+<p><strong>📧 E-Mail</strong><br>schroeder_holzarbeiten@web.de</p>
+<p><strong>📍 Standort</strong><br>Burg Stargard</p>
+</div>
 
-<p><strong>📞 Telefon</strong><br>
-+49 152 22450294</p>
+<a href="https://wa.me/4915222450294" class="gold-button">WhatsApp schreiben</a>
 
-<p><strong>📧 E-Mail</strong><br>
-schroeder_holzarbeiten@web.de</p>
-
-<p><strong>📍 Standort</strong><br>
-Burg Stargard</p>
+<div class="partner-card">
+  <span class="partner-label">REGIONALES NETZWERK</span>
+  <h3>Vom Stamm bis zum fertigen Einzelstück.</h3>
+  <p>Für Bau- und Schnittholz, Lohnschnitt und regionale Holzverarbeitung arbeite ich mit <strong>Holzverarbeitung Köppen</strong> zusammen. So entstehen kurze Wege und echte Handwerkslösungen aus der Region.</p>
+  <a href="https://www.holzverarbeitungkoeppen.de" target="_blank" rel="noopener noreferrer" class="partner-link">Holzverarbeitung Köppen ansehen <span>↗</span></a>
+</div>
 
 </div>
 
-<a href="https://wa.me/4915222450294" class="gold-button">
+<div class="project-request-card">
+  <div class="request-head">
+    <span class="section-small">PROJEKTANFRAGE</span>
+    <h3>Worum geht es?</h3>
+    <p>Einfach anklicken – Mehrfachauswahl ist möglich.</p>
+  </div>
 
-WhatsApp schreiben
-
-</a>
-
-<form class="contact-form"
-action="https://formspree.io/f/xwlkqjod"
-      method="POST"> 
+  <form class="contact-form contact-form-v2" action="https://formspree.io/f/xwlkqjod" method="POST">
+    <fieldset class="project-picker">
+      <legend class="sr-only">Projektart auswählen</legend>
+      <label class="project-choice"><input type="checkbox" name="projektart" value="Möbel & Sonderanfertigung"><span>🪵</span><b>Möbel & Sonderanfertigung</b></label>
+      <label class="project-choice"><input type="checkbox" name="projektart" value="Epoxidharz"><span>✨</span><b>Epoxidharz</b></label>
+      <label class="project-choice"><input type="checkbox" name="projektart" value="Terrasse & Außenbereich"><span>🌿</span><b>Terrasse & Außenbereich</b></label>
+      <label class="project-choice"><input type="checkbox" name="projektart" value="Restauration"><span>🛠️</span><b>Restauration</b></label>
+      <label class="project-choice"><input type="checkbox" name="projektart" value="Fahrzeugausbau"><span>🚐</span><b>Fahrzeugausbau</b></label>
+      <label class="project-choice"><input type="checkbox" name="projektart" value="Sonstiges"><span>💡</span><b>Sonstiges</b></label>
+    </fieldset>
 
     <div class="row">
-        <input type="text" name="name" placeholder="Ihr Name" required>
-        <input type="email" name="email" placeholder="E-Mail" required>
+      <input type="text" name="name" placeholder="Ihr Name" required>
+      <input type="email" name="email" placeholder="E-Mail" required>
     </div>
 
     <div class="row">
-        <input type="tel" name="telefon" placeholder="Telefon">
-        <input type="text" name="betreff" placeholder="Betreff">
+      <input type="tel" name="telefon" placeholder="Telefon">
+      <select name="zeitrahmen" aria-label="Gewünschter Zeitrahmen">
+        <option value="">Zeitrahmen wählen</option>
+        <option>So bald wie möglich</option>
+        <option>In den nächsten 1–3 Monaten</option>
+        <option>Später / noch offen</option>
+      </select>
     </div>
 
-    <textarea name="nachricht" placeholder="Erzählen Sie mir etwas über Ihr Projekt..." required></textarea>
+    <textarea name="nachricht" placeholder="Erzählen Sie mir kurz von Ihrem Projekt, Maßen, Holzart oder Ihrer Idee..." required></textarea>
 
-    <button type="submit">
-        Anfrage senden
-    </button>
+    <button type="submit">Anfrage senden <span>→</span></button>
+  </form>
+</div>
 
-</form>
-
-</div> 
+</div>
 
 </section>
 
